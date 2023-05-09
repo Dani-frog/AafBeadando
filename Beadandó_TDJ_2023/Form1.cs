@@ -26,9 +26,10 @@ namespace Beadandó_TDJ_2023
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
             numericUpDown1.Minimum = 1;
-            numericUpDown1.Maximum = 80;
+            numericUpDown1.Maximum = 50;
             
             label3.Font = new Font(font, Convert.ToInt32(numericUpDown1.Value));
+            label3.Size = new Size(Convert.ToInt32(numericUpDown1.Value) * 10, Convert.ToInt32(numericUpDown1.Value) * 4);
         }
 
 
@@ -168,7 +169,7 @@ namespace Beadandó_TDJ_2023
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             font = radioButton1.Text;
-
+            label3.Font = new Font(font, Convert.ToInt32(numericUpDown1.Value));
         }
 
 
@@ -198,12 +199,18 @@ namespace Beadandó_TDJ_2023
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             font = radioButton2.Text;
+            label3.Font = new Font(font, Convert.ToInt32(numericUpDown1.Value));
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
             font = radioButton3.Text;
+            label3.Font = new Font(font, Convert.ToInt32(numericUpDown1.Value));
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -251,16 +251,22 @@ namespace Beadandó_TDJ_2023
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label3.Location = new System.Drawing.Point(415, 41);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
+            this.label3.Size = new System.Drawing.Size(50, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Szöveg";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(122, 109);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(87, 20);
             this.numericUpDown1.TabIndex = 6;
